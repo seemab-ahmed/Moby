@@ -64,6 +64,9 @@ module.exports = {
         white: "0px 4px 30px 0px rgba(255, 255, 255, 0.9)",
         "white-glow": "0 0 40px 15px rgba(255, 255, 255, 0.5);",
       },
+      width: {
+        "fill-available": "-webkit-fill-available",
+      },
     },
   },
   plugins: [],

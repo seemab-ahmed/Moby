@@ -25,7 +25,7 @@ import React, { useState } from "react";
 export const HeroSectionContent = () => {
   const [isYearly, setIsYearly] = useState(true);
   return (
-    <div className="py-16 yflex flex-col bg-backgroundDark font-rethink">
+    <div className="py-16 yflex flex-col bg-backgroundDark font-rethink overflow-hidden">
       <div className="flex flex-col gap-4">
         <h2 className="text-white flex justify-center text-center w-full text-[48px] font-bold">
           Become a smarter <br /> investor in just 5 minutes
@@ -71,7 +71,7 @@ export const HeroSectionContent = () => {
        <hr className="text-[#fff] w-full opacity-10" />
       </div>
 
-      <div className="flex justify-center w-full text-center gap-[52px] pb-20">
+      <div className="flex justify-center w-full text-center gap-[52px] pb-20 flex-wrap">
         <img src={cnbcimg} alt="icon" className="pt-5" />
         <img src={foximg} alt="icon" className="pt-5" />
         <img src={marketimg} alt="icon" className="pt-5" />
@@ -87,8 +87,8 @@ export const HeroSectionContent = () => {
         <div className="flex justify-center flex-col items-center mb-20">
           <h1 className="text-[32px] font-bold pt-10 p-3">How Moby Works</h1>
 
-          <div className="flex  justify-between gap-3 text-center max-w-[1160px] w-full">
-            <div className=" bg-[#EBF9FC] pt-6 px-6 rounded-xl flex flex-1 w-full flex-col items-center gap-3 relative min-h-[800px]">
+          <div className="flex flex-col lg:flex-row justify-between gap-3 text-center max-w-[1160px] w-full flex-wrap">
+            <div className=" bg-[#EBF9FC] pt-6 px-6 rounded-xl flex flex-1 w-full flex-col items-center gap-3 relative min-h-[800px] lg:w-1/2 xlg:w-1/3 ">
               <h1 className="rounded-full bg-primaryblue py-2 px-5 w-6 flex justify-center">
                 1
               </h1>
@@ -106,7 +106,7 @@ export const HeroSectionContent = () => {
               </div>
             </div>
 
-            <div className="bg-[#EBF9FC] px-6 pt-6 rounded-xl flex flex-1 flex-col items-center gap-3 relative min-h-[800px]">
+            <div className="bg-[#EBF9FC] px-6 pt-6 rounded-xl flex flex-1 flex-col items-center gap-3 relative min-h-[800px] w-full lg:w-1/2 xlg:w-1/3">
               <h1 className="rounded-full bg-primaryblue py-2 px-5 w-6 flex justify-center ">
                 2
               </h1>
@@ -137,7 +137,7 @@ export const HeroSectionContent = () => {
               </div>
             </div>
 
-            <div className=" bg-[#EBF9FC] px-6 pt-6 rounded-xl flex flex-1 flex-col items-center gap-3 relative min-h-[800px]">
+            <div className=" bg-[#EBF9FC] px-6 pt-6 rounded-xl flex flex-1 flex-col items-center gap-3 relative min-h-[800px] w-full  xlg:w-1/3">
               <h1 className="rounded-full bg-primaryblue py-2 px-5 w-6 flex justify-center">
                 3
               </h1>
@@ -205,7 +205,7 @@ export const HeroSectionContent = () => {
           <div className="flex flex-col md:flex-row gap-10">
             <div className="md:w-1/2 mb-6 md:mb-0">
               <div className="rounded-xl p-6 bg-[#EBF9FC]">
-                <div className="flex justify-center mb-4 w-full">
+                <div className="flex justify-center mb-4 w-full ">
                   <button className="px-3 py-4 bg-primaryblue text-white rounded-xl mr-2 flex-1">
                     Premium Subscription (ROI)
                   </button>
@@ -315,7 +315,7 @@ export const HeroSectionContent = () => {
             </div>
 
             <div className="md:w-1/2 flex flex-col items-center">
-              <div className="flex gap-3 w-full">
+              <div className="flex gap-3 w-full px-4 lg:px-1">
                 <div className="bg-[#212121] rounded-2xl px-6 py-4 flex-1">
                   <div className="text-[#9d9a9a] text-[14px]">
                     S&P 500 Return
@@ -333,14 +333,14 @@ export const HeroSectionContent = () => {
                   </div>
                 </div>
               </div>
-              <ChartJs />
+              <ChartJs className="w-fill-available" />
             </div>
           </div>
         </div>
       </div>
 
       <div className="bg-[#EBF9FC] ">
-        <div className="pb-10">
+        <div className="pb-10 min-w-[900px] overflow-auto md:overflow-hidden">
                 <h1
                   colSpan="8"
                   className="text-center py-4 text-[32px] text-[#01111D] font-bold pb-10"
@@ -514,8 +514,8 @@ export const HeroSectionContent = () => {
           </label>
           <span className="ml-2">Yearly</span>
         </div>
-        <div className="flex justify-center m-auto max-w-[960px]">
-          <div className="bg-gray-800 p-6 mr-4 rounded-xl border border-1 border-[#3d3a3a] flex-1">
+        <div className="flex flex-col md:flex-row justify-center m-auto max-w-[960px] flex-wrap">
+          <div className="bg-gray-800 p-6 mr-4 rounded-xl border border-1 border-[#3d3a3a] flex-1 w-full ">
           <PriceIcon1 />
             <div className="flex justify-between items-center mb-4 mt-3">
               <h3 className="text-[24px] font-bold">Start Free today</h3>
@@ -538,7 +538,7 @@ export const HeroSectionContent = () => {
               Get Started
             </button>
           </div>
-          <div className="bg-blue-500 text-black p-6 bg-[#04CBF8] rounded-xl flex-1">
+          <div className="bg-blue-500 text-black p-6 bg-[#04CBF8] rounded-xl flex-1 w-full ">
           <PriceIcon2 />
             <div className="flex justify-between items-center mb-4 mt-3">
               <h3 className="text-[24px] font-bold">Premium</h3>
@@ -585,8 +585,8 @@ export const HeroSectionContent = () => {
 
         <hr className="text-[#fff] opacity-10 m-auto max-w-[1160px] pb-10" />
         
-        <div className="flex justify-center max-w-[1160px] gap-3 m-auto">
-          <div className="w-1/3 rounded-3xl p-8 bg-[#3d3d3d] relative ">
+        <div className="flex flex-col lg:flex-row justify-center max-w-[1160px] gap-3 m-auto">
+          <div className="w-full lg:w-1/3 rounded-3xl p-8 bg-[#3d3d3d] relative ">
           <img src={investor} alt="Logo" className="pt-5" />
             <div className="flex items-center mb-4">
               <div className="flex justify-between w-full">
@@ -610,7 +610,7 @@ export const HeroSectionContent = () => {
             </p> <ArrowIcon />
             </div>
           </div>
-          <div className="w-1/3 rounded-3xl p-8 bg-[#3d3d3d] relative">
+          <div className="w-full lg:w-1/3 rounded-3xl p-8 bg-[#3d3d3d] relative">
           <img src={wall} alt="Logo" className="pt-5" />
             <div className="flex items-center mb-4">
             <div className="flex justify-between w-full">
@@ -634,7 +634,7 @@ export const HeroSectionContent = () => {
             </p> <ArrowIcon />
             </div>
           </div>
-          <div className="w-1/3 rounded-3xl p-8  bg-[#3d3d3d] relative">
+          <div className="w-full lg:w-1/3 rounded-3xl p-8  bg-[#3d3d3d] relative">
           <img src={monkey} alt="Logo" className="pt-5" />
             <div className="flex items-center mb-4">
             <div className="flex justify-between w-full">

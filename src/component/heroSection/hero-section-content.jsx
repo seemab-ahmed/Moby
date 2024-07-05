@@ -36,10 +36,11 @@ export const HeroSectionContent = () => {
           Keep it simple, all in one app.
         </h4>
         <div className="flex justify-center">
-          <button className="py-4 px-6 bg-primaryblue hover:bg-[#467794] text-[16px] rounded-md text-backgroundDark">
-            Get started with Moby Premium Today{" "}
+          <button className="py-4 px-6 bg-primaryblue hover:bg-[#467794] text-[16px] rounded-md text-backgroundDark flex gap-2">
+           <p>
+           Get started with Moby Premium Today
+           </p>
             <span>
-              {" "}
               <RocketIcon />
             </span>
           </button>
@@ -87,7 +88,7 @@ export const HeroSectionContent = () => {
           <h1 className="text-[32px] font-bold p-3">How Moby Works</h1>
 
           <div className="flex  justify-between gap-3 text-center max-w-[1160px] w-full">
-            <div className=" bg-[#EBF9FC] p-6 rounded-xl flex flex-1 w-full flex-col items-center gap-3">
+            <div className=" bg-[#EBF9FC] pt-6 px-6 rounded-xl flex flex-1 w-full flex-col items-center gap-3 relative min-h-[800px]">
               <h1 className="rounded-full bg-primaryblue py-2 px-5 w-6 flex justify-center">
                 1
               </h1>
@@ -100,13 +101,13 @@ export const HeroSectionContent = () => {
                 understand what’s happening in the markets and how you can trade
                 with easy to understand reports.
               </p>
-              <div>
+              <div className="absolute bottom-0" >
                 <Iphone1 />
               </div>
             </div>
 
-            <div className="bg-[#EBF9FC] p-6 rounded-xl flex flex-1 flex-col items-center gap-3">
-              <h1 className="rounded-full bg-primaryblue py-2 px-5 w-6 flex justify-center">
+            <div className="bg-[#EBF9FC] px-6 pt-6 rounded-xl flex flex-1 flex-col items-center gap-3 relative min-h-[800px]">
+              <h1 className="rounded-full bg-primaryblue py-2 px-5 w-6 flex justify-center ">
                 2
               </h1>
               <p className="font-bold text-[20px]">
@@ -131,12 +132,12 @@ export const HeroSectionContent = () => {
                   </p>
                 </div>
               </div>
-              <div>
+              <div className="absolute bottom-0">
                 <Iphone2 />
               </div>
             </div>
 
-            <div className=" bg-[#EBF9FC] p-6 rounded-xl flex flex-1 flex-col items-center gap-3">
+            <div className=" bg-[#EBF9FC] px-6 pt-6 rounded-xl flex flex-1 flex-col items-center gap-3 relative min-h-[800px]">
               <h1 className="rounded-full bg-primaryblue py-2 px-5 w-6 flex justify-center">
                 3
               </h1>
@@ -146,7 +147,7 @@ export const HeroSectionContent = () => {
                 started investing right away (without waiting for new stock
                 picks to come out).
               </p>
-              <div className="flex flex-col gap-1 text-[14px] w-full">
+              <div className="flex flex-col gap-1 text-[14px] w-full ">
                 <p className="bg-[#E0F401] rounded-full p-4 font-medium">
                   Over 7+ addtional features
                 </p>
@@ -165,7 +166,7 @@ export const HeroSectionContent = () => {
                   Economic Calendar
                 </p>
               </div>
-              <div>
+              <div className="absolute bottom-0">
                 <Iphone3 />
               </div>
             </div>

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import HomePage from "./pages/HomePage/HomePage";
 import {
   BrowserRouter as Router,

@@ -25,7 +25,7 @@ import React, { useState } from "react";
 export const HeroSectionContent = () => {
   const [isYearly, setIsYearly] = useState(true);
   return (
-    <div className="lg:px-[40px] sm:px-[40px] py-16 yflex flex-col bg-backgroundDark font-rethink">
+    <div className="py-16 yflex flex-col bg-backgroundDark font-rethink">
       <div className="flex flex-col gap-4">
         <h2 className="text-white flex justify-center text-center w-full text-[48px] font-bold">
           Become a smarter <br /> investor in just 5 minutes
@@ -62,13 +62,13 @@ export const HeroSectionContent = () => {
         </p>
       </div>
 
-      <div className="py-10 flex m-auto max-w-[1160px] justify-center items-center">
-      <hr className="text-[#fff] w-[350px] opacity-10" />
-      <p className="bg-backgroundDark text-[#ccc] text-[20px] text-center w-[150px]">
+      <div className="py-10 flex m-auto max-w-[1160px] justify-center items-center gap-8">
+      <hr className="text-[#fff] w-full opacity-10" />
+      <p className="bg-backgroundDark text-[#929191] text-[18px] text-center w-[150px]">
 
           Partners
         </p>
-       <hr className="text-[#fff] w-[350px] opacity-10" />
+       <hr className="text-[#fff] w-full opacity-10" />
       </div>
 
       <div className="flex justify-center w-full text-center gap-[52px] pb-20">
@@ -85,7 +85,7 @@ export const HeroSectionContent = () => {
       {/* ---------------------------------------------------------------------------------------------------------- */}
       <div className="bg-white">
         <div className="flex justify-center flex-col items-center mb-20">
-          <h1 className="text-[32px] font-bold p-3">How Moby Works</h1>
+          <h1 className="text-[32px] font-bold pt-10 p-3">How Moby Works</h1>
 
           <div className="flex  justify-between gap-3 text-center max-w-[1160px] w-full">
             <div className=" bg-[#EBF9FC] pt-6 px-6 rounded-xl flex flex-1 w-full flex-col items-center gap-3 relative min-h-[800px]">
@@ -339,7 +339,7 @@ export const HeroSectionContent = () => {
         </div>
       </div>
 
-      <div className="bg-[#EBF9FC] p-6 ">
+      <div className="bg-[#EBF9FC] ">
         <div className="pb-10">
                 <h1
                   colSpan="8"
@@ -350,150 +350,146 @@ export const HeroSectionContent = () => {
 
               <hr className="text-[#ccc] m-auto max-w-[1160px] pb-10" /> 
 
-          <table className="max-w-[1160px] m-auto">
-            <thead>
-              <tr>
-                <th className="px-3 py-4 leading-none text-left font-bold text-[18px] ">
+          <div className="m-auto max-w-[1160px] flex flex-col gap-2">
+              <div className="flex gap-4 text-center justify-center">
+                <p className="px-3 py-4 leading-none text-left font-bold text-[18px] flex-1 text-ceter">
                   Year of Picks
-                </th>
-                <th className="px-3 py-4 leading-none text-left font-bold text-[18px] ">
+                </p>
+                <p className="px-3 py-4 leading-none text-left font-bold text-[18px] flex-1 text-ceter">
                   Start Range
-                </th>
-                <th className="px-3 py-4 leading-none text-left font-bold text-[18px] ">
+                </p>
+                <p className="px-3 py-4 leading-none text-left font-bold text-[18px] flex-1 text-ceter">
                   End Range
-                </th>
-                <th className="px-3 py-4 leading-none text-left font-bold text-[18px] ">
+                </p>
+                <p className="px-3 py-4 leading-none text-left font-bold text-[18px] flex-1 text-ceter">
                   Stock Picks
-                </th>
-                <th className="px-3 py-4 leading-none text-left font-bold text-[18px] ">
+                </p>
+                <p className="px-3 py-4 leading-none text-left font-bold text-[18px] flex-1 text-ceter">
                   Average Return
-                </th>
-                <th className="px-3 py-4 leading-none text-left font-bold text-[18px] ">
+                </p>
+                <p className="px-3 py-4 leading-none text-left font-bold text-[18px] flex-1 text-ceter">
                   Return vs SP500
-                </th>
-                <th className="px-3 py-4 leading-none text-left font-bold text-[18px] ">
+                </p>
+                <p className="px-3 py-4 leading-none text-left font-bold text-[18px] flex-1 text-ceter">
                   Picks with Return 0%
-                </th>
-                <th className="px-3 py-4 leading-none text-left font-bold text-[18px] ">
+                </p>
+                <p className="px-3 py-4 leading-none text-left font-bold text-[18px] flex-1 text-ceter">
                   % Profitable
-                </th>
-                <th className="px-3 py-4 leading-none text-left font-bold text-[18px] ">
+                </p>
+                <p className="px-3 py-4 leading-none text-left font-bold text-[18px] flex-1 text-ceter">
                   Max % Return
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td className="px-3 py-4">
+                </p>
+              </div>
+              <div className="flex gap-4 text-center justify-center">
+                <p className="px-2 py-2 flex-1 text-ceter">
                   2023 Picks
-                </td>
-                <td className="px-3 py-4">1/1/2023</td>
-                <td className="px-3 py-4">
+                </p>
+                <p className="px-2 py-2 flex-1 text-ceter">1/1/2023</p>
+                <p className="px-2 py-2 flex-1 text-ceter">
                   12/31/2023
-                </td>
-                <td className="px-3 py-4">140</td>
-                <td className="px-3 py-4 text-blue-500">
+                </p>
+                <p className="px-2 py-2 flex-1 text-ceter">140</p>
+                <p className="px-2 py-1 font-medium bg-[#C8F2FB] rounded-xl flex-1 text-ceter">
                   30.1%
-                </td>
-                <td className="px-3 py-4 text-blue-500">
+                </p>
+                <p className="px-2 py-1 font-medium bg-[#C8F2FB] rounded-xl flex-1 text-ceter">
                   9.9%
-                </td>
-                <td className="px-3 py-4">103</td>
-                <td className="px-3 py-4">74%</td>
-                <td className="px-3 py-4">523.7%</td>
-              </tr>
-              <tr>
-                <td className="px-3 py-4">
+                </p>
+                <p className="px-2 py-2 flex-1 text-ceter">103</p>
+                <p className="px-2 py-2 flex-1 text-ceter">74%</p>
+                <p className="px-2 py-2 flex-1 text-ceter">523.7%</p>
+              </div>
+              <div className="flex gap-4 text-center justify-center">
+                <p className="px-2 py-2 flex-1 text-ceter">
                   2022 Picks
-                </td>
-                <td className="px-3 py-4">1/1/2022</td>
-                <td className="px-3 py-4">
+                </p>
+                <p className="px-2 py-2 flex-1 text-ceter">1/1/2022</p>
+                <p className="px-2 py-2 flex-1 text-ceter">
                   12/31/2022
-                </td>
-                <td className="px-3 py-4">67</td>
-                <td className="px-3 py-4 text-blue-500">
+                </p>
+                <p className="px-2 py-2 flex-1 text-ceter">67</p>
+                <p className="px-2 py-1 font-medium bg-[#C8F2FB] rounded-xl flex-1 text-ceter">
                   35.5%
-                </td>
-                <td className="px-3 py-4 text-blue-500">
+                </p>
+                <p className="px-2 py-1 font-medium bg-[#C8F2FB] rounded-xl flex-1 text-ceter">
                   7.1%
-                </td>
-                <td className="px-3 py-4">52</td>
-                <td className="px-3 py-4">78%</td>
-                <td className="px-3 py-4">609.9%</td>
-              </tr>
-              <tr>
-                <td className="px-3 py-4">
+                </p>
+                <p className="px-2 py-2 flex-1 text-ceter">52</p>
+                <p className="px-2 py-2 flex-1 text-ceter">78%</p>
+                <p className="px-2 py-2 flex-1 text-ceter">609.9%</p>
+              </div>
+              <div className="flex gap-4 text-center justify-center">
+                <p className="px-2 py-2 flex-1 text-ceter">
                   2021 Picks
-                </td>
-                <td className="px-3 py-4">1/1/2021</td>
-                <td className="px-3 py-4">
+                </p>
+                <p className="px-2 py-2 flex-1 text-ceter">1/1/2021</p>
+                <p className="px-2 py-2 flex-1 text-ceter">
                   12/31/2021
-                </td>
-                <td className="px-3 py-4">104</td>
-                <td className="px-3 py-4 text-blue-500">
+                </p>
+                <p className="px-2 py-2 flex-1 text-ceter">104</p>
+                <p className="px-2 py-1 font-medium bg-[#C8F2FB] rounded-xl flex-1 text-ceter">
                   28.2%
-                </td>
-                <td className="px-3 py-4 text-blue-500">
+                </p>
+                <p className="px-2 py-1 font-medium bg-[#C8F2FB] rounded-xl flex-1 text-ceter">
                   6.7%
-                </td>
-                <td className="px-3 py-4">63</td>
-                <td className="px-3 py-4">61%</td>
-                <td className="px-3 py-4">611.5%</td>
-              </tr>
-              <tr>
-                <td className="px-3 py-4">
+                </p>
+                <p className="px-2 py-2 flex-1 text-ceter">63</p>
+                <p className="px-2 py-2 flex-1 text-ceter">61%</p>
+                <p className="px-2 py-2 flex-1 text-ceter">611.5%</p>
+              </div>
+              <div className="flex gap-4 text-center justify-center">
+                <p className="px-2 py-2 flex-1 text-ceter">
                   2020 Picks
-                </td>
-                <td className="px-3 py-4">1/1/2020</td>
-                <td className="px-3 py-4">
+                </p>
+                <p className="px-2 py-2 flex-1 text-ceter">1/1/2020</p>
+                <p className="px-2 py-2 flex-1 text-ceter">
                   12/31/2020
-                </td>
-                <td className="px-3 py-4">78</td>
-                <td className="px-3 py-4 text-blue-500">
+                </p>
+                <p className="px-2 py-2 flex-1 text-ceter">78</p>
+                <p className="px-2 py-1 font-medium bg-[#C8F2FB] rounded-xl flex-1 text-ceter">
                   85.6%
-                </td>
-                <td className="px-3 py-4 text-blue-500">
+                </p>
+                <p className="px-2 py-1 font-medium bg-[#C8F2FB] rounded-xl flex-1 text-ceter">
                   26.4%
-                </td>
-                <td className="px-3 py-4">59</td>
-                <td className="px-3 py-4">76%</td>
-                <td className="px-3 py-4">9.9%</td>
-              </tr>
-              <tr className="">
-                <td className="">
-                <span className="px-2 py-2 text-white bg-primaryblue rounded-xl "> Since 2020</span>  
-                </td>
-                <td className="">
+                </p>
+                <p className="px-2 py-2 flex-1 text-ceter">59</p>
+                <p className="px-2 py-2 flex-1 text-ceter">76%</p>
+                <p className="px-2 py-2 flex-1 text-ceter">9.9%</p>
+              </div>
+              <div className="flex gap-4 text-center justify-center">
+                <p className="px-2 py-2 text-white bg-primaryblue rounded-xl flex-1 text-ceter ">
+                <span className=""> Since 2020</span>  
+                </p>
+                <p className="px-2 py-2 text-white bg-primaryblue rounded-xl flex-1 text-ceter ">
                   
-                <span className="px-2 py-2 text-white bg-primaryblue rounded-xl "> 1/1/2016</span> 
-                  </td>
-                <td className="">
+                <span > 1/1/2016</span> 
+                  </p>
+                <p className="px-2 py-2 text-white bg-primaryblue rounded-xl flex-1 text-ceter ">
                   
-                <span className="px-2 py-2 text-white bg-primaryblue rounded-xl ">   12/31/2023</span> 
+                <span >   12/31/2023</span> 
                 
-                </td>
-                <td className="">
-                <span className="px-2 py-2 text-white bg-primaryblue rounded-xl ">  389</span> 
-                  </td>
-                <td className="">
-                <span className="px-2 py-2 text-white bg-primaryblue rounded-xl ">   41.7%</span> 
+                </p>
+                <p className="px-2 py-2 text-white bg-primaryblue rounded-xl flex-1 text-ceter ">
+                <span >  389</span> 
+                  </p>
+                <p className="px-2 py-2 text-white bg-primaryblue rounded-xl flex-1 text-ceter ">
+                <span >   41.7%</span> 
                 
-                </td>
-                <td className="">
-                <span className="px-2 py-2 text-white bg-primaryblue rounded-xl ">   11.9%</span> 
-                </td>
-                <td className="">
-                <span className="px-2 py-2 text-white bg-primaryblue rounded-xl "> 277</span> 
-                 </td>
-                <td className="">
-                <span className="px-2 py-2 text-white bg-primaryblue rounded-xl ">   71%</span> 
-                  </td>
-                <td className="">
-                <span className="px-2 py-2 text-white bg-primaryblue rounded-xl ">  991.4%</span> 
-                </td>
-              </tr>
-            </tbody>
-          </table>
+                </p>
+                <p className="px-2 py-2 text-white bg-primaryblue rounded-xl flex-1 text-ceter ">
+                <span >   11.9%</span> 
+                </p>
+                <p className="px-2 py-2 text-white bg-primaryblue rounded-xl flex-1 text-ceter ">
+                <span > 277</span> 
+                 </p>
+                <p className="px-2 py-2 text-white bg-primaryblue rounded-xl flex-1 text-ceter ">
+                <span >   71%</span> 
+                  </p>
+                <p className="px-2 py-2 text-white bg-primaryblue rounded-xl flex-1 text-ceter ">
+                <span >  991.4%</span> 
+                </p>
+              </div>
+          </div>
         </div>
       </div>
 
